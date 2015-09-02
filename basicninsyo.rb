@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
 
   def basic_authentication
     authenticate_or_request_with_http_basic do |user, password|
-      user == [ユーザー名] && password == [パスワード]
+      user == [qidb] && password == [mottirune]
     end
   end
 
